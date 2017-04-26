@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/icall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ICall" />
+    <Button
+        android:id="@+id/tbox_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tbox_call" />
+    
+    <Button
+        android:id="@+id/tbox_ecall_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tbox_ecall_status" />
+    <Button
+        android:id="@+id/tbox_generalInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tbox_generalInfo" />
+    <Button
+        android:id="@+id/tbox_network_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tbox_network_status" />
+    <Button
+        android:id="@+id/tbox_phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tbox_phoneNumber" />
+
+   
+    <Button
+        android:id="@+id/tbox_vincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tbox_vincode" />
+
+   
+
+</LinearLayout>

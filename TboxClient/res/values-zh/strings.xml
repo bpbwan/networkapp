@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="tbox_app_name">T-Box来电</string>
+    <string name="callmycar_app_name">呼叫爱车</string>
+    <string name="icall_app_name">一键导航</string>
+    <string name="bcall_app_name">道路救援</string>
+     <string name="ecall_app_name">紧急救援</string>
+    <string name="call_ok">确定</string>
+    <string name="call_info_text_fail">呼叫失败，请稍候重试！</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="add">添加</string>
+    <string name="delete">删除</string>
+    <string name="update">修改</string>
+    <string name="add_white">添加白名单</string>
+    <string name="add_white_please">请添加白名单！</string>
+    <string name="delete_white">删除白名单</string>
+    <string name="update_white">修改白名单</string>
+    <string name="no">取消</string>
+    <string name="ok">确定</string>
+    <string name="info">将 <xliff:g id="name" example="Browser">%s</xliff:g> 从白名单中删除！</string>
+    <string name="input_num">请输入电话号码</string>
+    <string name="input_name">请输入姓名</string>
+    <string name="icall_status_waiting">请稍等...</string>
+    <string name="icall_status_connetting">正在连接服务器...</string>
+    <string name="icall_servicesServiceCalling">正在呼叫服务平台...</string>
+    <string name="icall_servicesServiceOnCalling">正在通话服务中...</string>
+    <string name="icall_TboxCallEnd">通话结束</string>
+    <string name="icall_tboxStatusErr">T-Box 异常!</string>
+    <string name="icall_servicesEnd">服务结束！</string>
+    <string name="icall_servicesDataErr">服务数据异常！</string>
+     <string name="icall_servicesERR_NotGetPoi">还没有获取到POI信息</string>
+    
+    <string name="icall_servicesConnectErr">服务器连接异常！请稍后再试！</string>
+    <string name="icall_tboxExitInfo">现在正在通话中，您确认退出？</string>
+    <string name="icall_servicesOverTime">服务超时，服务结束！</string>
+    <string name="icall_AreYouSureExit">是否要退出一键导航？</string>
+ 
+     <string name="bcall_status_connetting">正在连接服务器...</string>
+    
+    <string name="bcall_onThePhoneCanNotEixt">正在通话中，无法退出！</string>
+    <string name="Eixt_ing">正在关闭服务，请稍等！</string>
+    <string name="bcall_callIsOverAndCallAgaint">服务尚未结束，但通话已中断！请稍后再次尝试！</string>
+    <string name="bcall_servicesEnd">道路救援服务已结束！</string>
+    <string name="bcall_servicesOverTime">道路救援服务平台无响应超时！</string>
+    <string name="bcall_servicesConnectErr">连接服务器异常！</string>
+    <string name="bcall_autoAnswer">道路救援服务电话回拨，将自动接听</string>
+    <string name="bcall_servicesServiceCalling">正在呼叫服务平台...</string>
+    <string name="bcall_servicesServiceConnecting">正在通话服务中...</string>
+    <string name="bcall_servicesServiceCallEnd">通话结束</string>
+    <string name="bcall_AreYouSureExit">您是否要退出道路救援？</string>
+    <string name="bcall_startNavi">正在启动导航...</string>
+    <string name="bcall_gettingPoi">请稍等，正在获取POI信息...</string>
+    <string name="bcall_serviceEnd">服务已结束！</string>
+   <string name="bcall_tboxErr">Tbox 异常！</string>
+    <string name="mycall_onThePhone">在通话中...</string>
+    <string name="mycall_endOffThePhone">结束通话</string>
+     <string name="mycall_editTextIsNull">用户名或者电话不能为空！</string>
+    <string name="mycall_phoneCallIn">来电：</string>
+     <string name="ecall_inECallStatus">紧急救援服务中</string>
+
+</resources>

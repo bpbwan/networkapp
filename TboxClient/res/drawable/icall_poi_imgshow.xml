@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/poi_gred"
+        android:maxLevel="2"/>
+    <item
+        android:drawable="@drawable/icall_poi_anim_imgshow_next"
+        android:maxLevel="1"/>
+    <item
+        android:drawable="@drawable/poi_red"
+        android:maxLevel="0"/>
+
+</layer-list>

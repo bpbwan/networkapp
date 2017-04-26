@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+       <declare-styleable name="XImageButton">
+        <attr name="upColor" format="color" />
+        <attr name="downColor" format="color" />
+        <attr name="text" format="string" />
+        <attr name="fontSize" format="integer" />
+        <attr name="offsetx" format="integer" />
+        <attr name="offsety" format="integer" />
+        <attr name="fontstyle" format="integer" />
+        <attr name="textAlign" format="integer" />
+        <attr name="btnTextLength" format="integer" />
+   </declare-styleable>
+</resources>

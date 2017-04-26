@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="13px" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="4px"
+            android:text="删除联系人"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="13px"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="350px"
+                android:layout_height="70px"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="10px"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/p"
+                android:drawablePadding="15px"
+                android:ems="20"
+                 android:textCursorDrawable="@drawable/color_cursor"
+                 
+                android:inputType="textPhonetic"
+                android:hint="@string/input_name"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="350px"
+                android:layout_height="1px"
+                android:layout_marginLeft="35px"
+                android:background="#01abcf" />
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="350px"
+                android:layout_height="70px"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="10px"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/n"
+                android:drawablePadding="15px"
+                android:ems="20"
+                android:hint="@string/input_num"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textCursorDrawable="@drawable/color_cursor"
+                 />
+
+            <View
+                android:layout_width="350px"
+                android:layout_height="1px"
+                android:layout_marginLeft="35px"
+                android:background="#01abcf" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20px"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:background="@drawable/button"
+            android:text="@string/ok"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/button"
+            android:text="@string/no"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

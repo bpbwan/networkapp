@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="carnetapp.tbox"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+    <!-- 接收开机广播权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- GPS权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- settings数据库读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <!-- TOB -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name="carnetapp.tbox.main.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/callmycar_app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="carnetapp.tbox.test.TestSendCommand"
+            android:exported="true"
+            android:label="@string/bcall_app_name"
+            android:theme="@style/baseStyle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".callmycar.MainActivity"
+            android:exported="true"
+            android:label="@string/callmycar_app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/baseStyle" >
+            <intent-filter>
+                <action android:name="speech_open_tbox_callcar" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".icall.ICallActivity"
+            android:exported="true"
+            android:label="@string/icall_app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/baseStyle" >
+            <intent-filter>
+                <action android:name="speech_open_tbox_navigation" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".bcall.BCallAvtivity"
+            android:exported="true"
+            android:label="@string/bcall_app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/baseStyle" >
+            <intent-filter>
+                <action android:name="speech_open_tbox_sos" />
+                <action android:name="anto_open_bcall" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="carnetapp.tbox.callmycar.DetailActivity"
+            android:theme="@style/dialog"
+            android:windowSoftInputMode="stateUnchanged|adjustPan" >
+        </activity>
+        <activity
+            android:name=".callmycar.PhoneAnswerActivity"
+            android:exported="true"
+            android:label="@string/tbox_app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/baseStyle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="carnetapp.tbox.main.SOSToastActivity"
+            android:theme="@style/Transparent" 
+             android:label="@string/ecall_app_name"
+            android:launchMode="singleTop">
+            <category android:name="android.intent.category.DEFAULT" />
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </activity>
+
+        <service
+            android:name="carnetapp.tbox.main.TboxModel"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="carnetapp.tbox.main.TboxModel" />
+            </intent-filter>
+        </service>
+
+        <!-- 添加接收开机启动广播 -->
+        <receiver android:name="carnetapp.tbox.main.BootBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
